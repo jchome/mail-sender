@@ -1,0 +1,128 @@
+<!doctype html>
+<html class="h-100">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="sample page">
+	<meta name="keywords" content="sample page">
+	<meta name="author" content="Julien CORON">
+	<title>sample page</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body class="h-100">
+
+	<section id="section-contact" class="mb-5 h-100">
+		<div class="container">
+
+			<div class="section-title">
+				<h2>Contact</h2>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 pt-2 content">
+					<p>
+						Sample text
+					</p>
+
+					<div class="w-100 my-3 text-center">
+						<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+							Contact form
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+			
+
+		 <!-- template black-footer -->
+		
+	<footer id="black-footer_6" class="bg-dark text-light text-center text-md-left">
+		<div class="container">
+			<div class="row pt-4">
+				<div class="col-sm-6 col-md-4 pb-4">
+					<p class="mb-4">
+						<a href="#section-contact" class="text-light">
+							Contact
+						</a>
+					</p>
+				</div>
+				<div class="col-sm-6 col-md-4 pb-4">
+					<h4 class="mb-4">
+						Thanks to
+					</h4>
+					<ul class="list-unstyled">
+						<li class="mb-1">
+							
+						</li>
+					</ul>
+				</div>
+			</div>
+			<p class="text-center text-secondary border-top border-secondary py-4 mb-0">
+				sample page
+			</p>
+		</div>
+	</footer>
+	
+	
+	<!-- Modal - Contact -->
+	<div class="modal fade" id="contactModal" data-bs-backdrop="static" data-bs-keyboard="false" 
+		tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5">
+						Contact form
+					</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+				</div>
+				<div class="modal-body">
+					<div class="mb-3">
+						<label for="inputEmail" class="form-label">Your e-mail address *</label>
+						<input type="email" class="form-control" id="inputEmail">
+					</div>
+					<div class="mb-3">
+						<label for="inputName" class="form-label">Your name *</label>
+						<input type="text" class="form-control" id="inputName">
+					</div>
+					
+					<div class="mb-3">
+						<label for="inputRequest" class="form-label">Your comment</label>
+						<textarea id="inputRequest" name="inputRequest" class="form-control"></textarea>
+					</div>
+					<i style="font-size: smaller;">
+						Fields with * are mandatory 
+					</i>
+				</div>
+				<div class="modal-footer">
+					<button id="btnCancel" type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+						Cancel
+					</button>
+					<button id="btnSend" type="submit" class="btn btn-primary" onclick="send_email()">Send !</button>
+				</div>
+			</div>
+		</div>
+	</div>
+			
+
+	<!-- FOOTER -->
+	
+		
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<script src="assets/js/main.js?v=2024-05-08:15:22"></script>
+<script>
+
+</script>
+
+</body>
+</html>
